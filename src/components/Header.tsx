@@ -26,13 +26,13 @@ export const Header = () => {
     <div className='w-full grid grid-cols-1 lg:grid-cols-header items-center gap-6 lg:gap-2 relative'>
       
       <div className='h-20 flex flex-col items-center justify-center w-fit'>
-        <Image src={'/images/logo-2.png'} width={250} height={75} alt="Thiago Aramizo's Sim City" className='saturate-0 transition-all duration-500 w-48 hover:saturate-100 md:w-52 lg:w-56'/>
+        <Image src={'/images/logo-2.png'} width={250} height={75} alt="Thiago Aramizo's Sim City" className='saturate-0 transition-all duration-500 w-48 hover:saturate-100 md:w-52 lg:w-56 invisible lg:visible'/>
       </div>
 
       <div className='bg-cyan-800 bg-gradient-to-b from-cyan-600 to-cyan-900 text-slate-100 w-full flex rounded-2xl shadow-lg items-center justify-between overflow-hidden'>
 
-        <div className='flex'>
-          <div className='border-r border-cyan-900 px-6 py-4 h-20'>
+        <div className='flex flex-wrap items-center justify-center'>
+          <div className='lg:border-r md:border-r border-cyan-900 px-6 pt-3 pb-1 md:py-4 lg:py-4 h-15 md:h-20 lg:h-20'>
             <div className='flex items-center gap-2'>
               <UsersThree size={42}/>
               <div className='flex flex-col items-start gap-0 text-lg font-semibold'>
@@ -42,7 +42,7 @@ export const Header = () => {
             </div>
           </div>
 
-          <div className='border-r border-cyan-900 px-6 py-4 h-20'>
+          <div className='lg:border-r md:border-r border-cyan-900 px-6 pt-3 pb-1 md:py-4 lg:py-4 h-15 md:h-20 lg:h-20'>
             <div className='flex items-center gap-2'>
               <Briefcase size={42} />
               <div className='flex flex-col items-start gap-0 text-lg font-semibold'>
@@ -52,7 +52,7 @@ export const Header = () => {
             </div>
           </div>
 
-          <div className='border-r border-cyan-900 px-6 py-4 h-20'>
+          <div className='lg:border-r md:border-r border-cyan-900 px-6 pt-1 pb-3 md:py-4 lg:py-4 h-15 md:h-20 lg:h-20'>
             <div className='flex items-center gap-2'>
               <Bank size={42} />
               <div className='flex flex-col items-start gap-0 text-lg font-semibold'>

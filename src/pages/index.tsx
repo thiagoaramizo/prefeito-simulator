@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/Button'
 import { Play } from '@phosphor-icons/react'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 
 
 export default function Home() {
@@ -15,6 +16,9 @@ export default function Home() {
 
   return (
    <>
+   <Head>
+    <title>Prefeito Simulator</title>
+   </Head>
 
     <div className='w-full h-full flex flex-col items-center justify-center gap-8'>
       <motion.div
@@ -22,8 +26,8 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <strong className='block text-4xl font-black text-center'>THIAGO ARAMIZO&#39;S</strong>
-        <Image src={'/images/logo-2-big.png'} width={800} height={255} alt="Thiago Aramizo's Sim City"  />
+        <strong className='block text-2xl md:text-3xl lg:text-4xl font-black text-center'>THIAGO ARAMIZO&#39;S</strong>
+        <Image src={'/images/logo-2-big.png'} width={800} height={255} alt="Thiago Aramizo's Sim City" className='w-full' />
       </motion.div>
 
       <motion.div

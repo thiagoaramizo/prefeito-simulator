@@ -1,38 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Prefeito Simulator
 
-## Getting Started
+Jogo criado utilizando o Framework Next.Js, similar aos jogos de simulação de administração de cidades como Sim City e Cities. O jogo conta com interface gráfica intuitiva e divertida.
 
-First, run the development server:
+![tela-inicial](https://user-images.githubusercontent.com/48260314/234280877-a07116c8-7834-4484-814a-b098b5f04101.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para a criação do jogo foram utilizados varios recursos do *ReactJs*, além de bibliotecas auxiliares com destaque para o *Phosphor Icons* para os recursos de ícones, *Framer-motion* para os recursos de animação, *Howler*, para o áudio e Tailwindcss para a estilização.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Interface
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+O jogo utiliza uma interface simples para interação, no qual o usuário cria cartões para cada uma das regiões da cidade e adiciona serviços públicos, o objetivo a satisfazer as necessidades da população, gerando crescimento da região e equilíbrio fiscal.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![nova-regiao](https://user-images.githubusercontent.com/48260314/234283607-47558d0a-0a60-4b8d-805e-8131210b8bb5.gif)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+### Jogabilidade
 
-To learn more about Next.js, take a look at the following resources:
+O jogo funciona com base em turnos, cada turno corresponde a um mês. Para avançar o mês o jogador deverá pressionar o botão vermelho localizado no canto superior direito da tela.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![novo-turno](https://user-images.githubusercontent.com/48260314/234288825-d7bd6ebf-f9cf-4005-9b8a-6c1ef8ed7d38.gif)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### Fim de jogo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Trata-se de um jogo casual sem fim determinado. Enquanto o jogador mantiver o equilíbrio fiscal o jogo não é encerrado. Caso tenha um orçamento negativo superior a dez mil a cidade entra em falência e é necessário reiniciar o jogo. 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+O jogador pode criar quantas regiões desejar. Existem três tipos de região: Residencial, Comercial e Industrial, cada uma com características e necessidades próprias.
+
+<img width="1427" alt="interface-jogando" src="https://user-images.githubusercontent.com/48260314/234281288-ebb00ad2-6e21-45bc-bd09-9b336592c17b.png">
+
+## Acesse o jogo
+
+Para acessar o jogo basta acessar [ESTE LINK](https://prefeito-simulator.vercel.app/), divirta-se!
