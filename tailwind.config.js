@@ -8,9 +8,15 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'game': "url('/images/bg.jpg')",
+        'radial-gradient': 'radial-gradient(circle, rgba(8, 145, 178,1) 0%, rgba(14,116,144,1) 100%)',
+      },
+      borderColor: {
+        'opacity-white': 'rgba(255, 255, 255, 0.3)',
+        'opacity-black': 'rgba(0, 0, 0, 0.1)',
+      },
+      gridTemplateColumns: {
+        'header': '260px 1fr'
       },
     },
   },

@@ -8,20 +8,19 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* { 
+  box-sizing: border-box; 
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+html {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tooltip {
+  @apply invisible absolute opacity-0 -translate-y-2 transition duration-300;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50 opacity-100 translate-y-0;
 }
